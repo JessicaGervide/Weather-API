@@ -156,8 +156,21 @@ a {
     padding: 0.75em 0;
     display: flex;
     justify-content: center;
+
+    .rotate {
+        animation: rotation 2s infinite linear;
+    }
 }
 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
 .section__temp, 
 .section__icons,
 .section__details {
