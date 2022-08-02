@@ -1,0 +1,178 @@
+/* Custom Properties */
+
+/* Fonts */
+$ff-primary: 'Source Sans Pro', sans-serif;
+
+/* Weights */
+$fw-thin: 300;
+$fw-reg: 400;
+$fw-bold: 600;
+$fw-xbold: 700;
+
+/* Font sizes */
+$fs-h1: 4.4rem;
+$fs-h2: 4rem;
+$fs-body: 2rem;
+$fs-small: 1.6rem;
+$fs-medium: 2.4rem;
+$fs-large: 7.2rem;
+$fs-xlarge: 20rem;
+
+/* Colors */
+$clr-light: #ffffff;
+$clr-dark: #303030;
+$clr-accent: #9cebfb;
+$clr-gray: #717171;
+$clr-black: #111;
+
+/* General styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body { 
+    font: $fw-reg $fs-body $ff-primary;
+    background: $clr-light;
+    color: $clr-dark;
+    line-height: 1.6;}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 1em 0 0.2em 0;
+    background: $clr-accent;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+h1, 
+h2, 
+h3,
+.fs__large {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+    font-size: $fs-h1;
+    margin-bottom: 0.2em;
+    font-weight: $fw-bold;
+}
+
+h2 {
+    font-size: $fs-h2;
+}
+
+p {
+    margin-bottom: 1em;
+    font-weight: $fw-bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.clr__gray {
+    color: $clr-gray;
+}
+
+.fs__small {
+    font-size: $fs-small;
+}
+
+.fs__medium {
+    font-size: $fs-medium;
+}
+
+.fs__large {
+    font-size: $fs-large;
+}
+
+.fs__xlarge {
+    font-size: $fs-xlarge;
+}
+
+.fw__regular {
+    font-weight: $fw-reg;
+}
+
+.fw__strong {
+    font-weight: $fw-bold;
+}
+
+.fw__xstrong {
+    font-weight: $fw-xbold;
+}
+
+/* Custom styles */
+.container
+{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.weather__section {  
+    padding-bottom: 2em;
+}
+
+.section__city {
+    text-align: center;
+
+    p:first-letter {
+        text-transform: capitalize;
+    }
+}
+
+.section__img {
+    padding: 0.75em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section__temp, 
+.section__icons,
+.section__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__temp {
+    margin-bottom: 1em;
+}
+
+.section__icons
+{
+    p {
+        color: $clr-gray;
+        margin-bottom: -0.25em;
+    }
+}

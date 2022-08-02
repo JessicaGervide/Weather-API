@@ -1,0 +1,177 @@
+/* Custom Properties */
+/* Fonts */
+/* Weights */
+/* Font sizes */
+/* Colors */
+/* General styles */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 400 2rem "Source Sans Pro", sans-serif;
+  background: #ffffff;
+  color: #303030;
+  line-height: 1.6;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 1em 0 0.2em 0;
+  background: #9cebfb;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+.fs__large {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.4rem;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.clr__gray {
+  color: #717171;
+}
+
+.fs__small {
+  font-size: 1.6rem;
+}
+
+.fs__medium {
+  font-size: 2.4rem;
+}
+
+.fs__large {
+  font-size: 7.2rem;
+}
+
+.fs__xlarge {
+  font-size: 20rem;
+}
+
+.fw__regular {
+  font-weight: 400;
+}
+
+.fw__strong {
+  font-weight: 600;
+}
+
+.fw__xstrong {
+  font-weight: 700;
+}
+
+/* Custom styles */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+}
+
+.weather__section {
+  padding-bottom: 2em;
+}
+
+.section__city {
+  text-align: center;
+}
+
+.section__city p:first-letter {
+  text-transform: capitalize;
+}
+
+.section__img {
+  padding: 0.75em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__temp,
+.section__icons,
+.section__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__temp {
+  margin-bottom: 1em;
+}
+
+.section__icons p {
+  color: #717171;
+  margin-bottom: -0.25em;
+}
+/*# sourceMappingURL=style.css.map */
